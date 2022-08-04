@@ -10,7 +10,7 @@ function Header(props) {
       <ul className="nav-container">
         <li>
           <FaBars
-            class="header-icon mobile"
+            className="header-icon mobile"
             size={24}
             onClick={props.openSidebar}
           />
@@ -19,6 +19,7 @@ function Header(props) {
           <NavLink to="/">
             <img
               className="nav-item-img"
+              alt="Ju Jing Yi"
               src="https://i.pinimg.com/564x/7d/5a/ac/7d5aacf9e1bf166ed96c6a8913854063.jpg"
             />
           </NavLink>
@@ -37,6 +38,11 @@ function Header(props) {
         <li className="desktop">
           <NavLink className="nav-item" to="/404-not-found">
             404
+          </NavLink>
+        </li>
+        <li className="desktop">
+          <NavLink className="nav-item" to="/maps">
+            Maps
           </NavLink>
         </li>
         <li>

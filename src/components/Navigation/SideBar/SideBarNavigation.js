@@ -32,6 +32,11 @@ export default function SideBarNavigation(props) {
               404
             </NavLink>
           </li>
+          <li className="nav-item mobile" onClick={props.closeSidebar}>
+            <NavLink className="nav-item-link" to="/maps">
+              Maps
+            </NavLink>
+          </li>
         </ul>
       </aside>
     </CSSTransition>
